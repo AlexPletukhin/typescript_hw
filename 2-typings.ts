@@ -51,7 +51,7 @@ function toWords(number: number|string, asOrdinal?: boolean): string {
 function generateWords(number: number, newWords?: string[]): string {
     let remainder: number = 0
     let word: string = ''
-    let words: string[] = arguments[1];
+    let words: string[] | undefined = newWords
 
     // We’re done
     if (number === 0) {
